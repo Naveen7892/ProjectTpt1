@@ -1,0 +1,88 @@
+list:
+  - title: "Company 1"
+    location:
+      title: "Location"
+      value: "123 Main Street, City1, Country1"
+    mobile:
+      title: "Mobile"
+      value: "123-456-7890"
+    email:
+      title: "Email"
+      value: "example1@example.com"
+
+  - title: "Company 2"
+    location:
+      title: "Location"
+      value: "456 Oak Avenue, City2, Country2"
+    mobile:
+      title: "Mobile"
+      value: "456-789-1234"
+    email:
+      title: "Email"
+      value: "example2@example.com"
+
+  - title: "Company 3"
+    location:
+      title: "Location"
+      value: "789 Pine Street, City3, Country3"
+    mobile:
+      title: "Mobile"
+      value: "789-123-4567"
+    email:
+      title: "Email"
+      value: "example3@example.com"
+
+  - title: "Company 4"
+    location:
+      title: "Location"
+      value: "123 Main Street, City1, Country1"
+    mobile:
+      title: "Mobile"
+      value: "123-456-7890"
+    email:
+      title: "Email"
+      value: "example1@example.com"
+
+  - title: "Company 5"
+    location:
+      title: "Location"
+      value: "456 Oak Avenue, City2, Country2"
+    mobile:
+      title: "Mobile"
+      value: "456-789-1234"
+    email:
+      title: "Email"
+      value: "example2@example.com"
+
+  - title: "Company 6"
+    location:
+      title: "Location"
+      value: "789 Pine Street, City3, Country3"
+    mobile:
+      title: "Mobile"
+      value: "789-123-4567"
+    email:
+      title: "Email"
+      value: "example3@example.com"
+
+  - title: "Company 7"
+    location:
+      title: "Location"
+      value: "123 Main Street, City1, Country1"
+    mobile:
+      title: "Mobile"
+      value: "123-456-7890"
+    email:
+      title: "Email"
+      value: "example1@example.com"
+
+  - title: "Company 8"
+    location:
+      title: "Location"
+      value: "456 Oak Avenue, City2, Country2"
+    mobile:
+      title: "Mobile"
+      value: "456-789-1234"
+    email:
+      title: "Email"
+      value: "example2@example.com"
