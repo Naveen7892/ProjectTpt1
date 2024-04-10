@@ -228,10 +228,13 @@ imageOpacity: 0.8
       </div>
 </div>
 
+{%- comment -%} To link to other page Hyperlink for markdown {%- endcomment -%}
+{%- comment -%} [Branch 1](/branch-1/) {%- endcomment -%}
+
 <div class="card-container">
-    {% for card in site.data.cards %}
+    {% for card in site.data.index.cards %}
     <div class="card">
-      <a href="#">
+      <a href="/branch-1">
         <img src="{{ card.image }}" alt="{{ card.title }}">
         <h2>{{ card.title }}</h2>
         <p>{{ card.description }}</p>
@@ -244,7 +247,7 @@ imageOpacity: 0.8
   <h1 style="text-align: center;">Branch Details</h1>
 
   <div class="address-block-container">
-      {% for addressBlock in site.data.addressBlocks.list %}
+      {% for addressBlock in site.data.index.addressBlocks.list %}
         <div class="address-block">
             <div class="address-details">
                 <h6><strong>{{ addressBlock.title }}</strong></h6>
