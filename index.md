@@ -2,10 +2,21 @@
 layout: default
 title: Home
 underConstruction: assets/images/work.jpg
+mainImage: assets/images/homepage/main.jpeg
 imageOpacity: 0.8
 ---
 
 <style>
+/* Homepage - main */
+.homepage-main {
+    margin-top: 100px; /* for iphone SE resolution */
+    background-image: url('{{page.mainImage}}');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    min-height: 75vh;
+}
+
 /* Carousel */
 .carousel-control-prev-icon {
     width: 60px;
@@ -187,7 +198,11 @@ imageOpacity: 0.8
 
 </style>
 
-<div class="carousalContainer">
+<div class="homepage-main">
+    {%- comment -%} <img src="{{page.mainImage}}" class="img-fluid" style="object-fit: fill;" alt="..." style="opacity:{{page.mainImage}}"> {%- endcomment -%}
+</div>
+
+<div class="carousalContainer" hidden>
     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -231,7 +246,7 @@ imageOpacity: 0.8
 {%- comment -%} To link to other page Hyperlink for markdown {%- endcomment -%}
 {%- comment -%} [Branch 1](/branch-1/) {%- endcomment -%}
 
-<div class="card-container">
+<div class="card-container" hidden>
     {% for card in site.data.index.cards %}
     <div class="card">
       <a href="/branch-1">
@@ -243,7 +258,7 @@ imageOpacity: 0.8
     {% endfor %}
 </div>
 
-<div style="background-color: lightgray;">
+<div style="background-color: lightgray;" hidden>
   <h1 style="text-align: center;">Branch Details</h1>
 
   <div class="address-block-container">
