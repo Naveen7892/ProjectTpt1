@@ -16,6 +16,16 @@ imageOpacity: 0.8
     background-position: center;
     min-height: 75vh;
 }
+@media (max-width: 767px) {
+    .homepage-main {
+        margin-top: 100px; /* for iphone SE resolution */
+        background-image: url('{{page.mainImage}}');
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
+        background-position: center;
+        min-height: 60vh;
+    }
+}
 
 /* Carousel */
 .carousel-control-prev-icon {
